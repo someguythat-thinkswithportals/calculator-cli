@@ -10,11 +10,34 @@ this is a feature-rich, interactive command-line calculator written entirely in 
   - distance (kilometers ↔ miles)
   - weight (kilograms ↔ pounds)
 - **calculation history**: automatically logs your results to `calc_history.txt`.
-- **Floating Point**: accurate decimal support with `bc`.
-- **Interactive UI**: Colorful menus and error handling for invalid inputs.
+- **floating point**: accurate decimal support with `bc`.
+- **interactive UI**: colorful menus and error handling for invalid inputs. because why not
 
 
 ## installation
 
-### dependencies 
-first things first you need to install bc if you dont have it. to install it in debian/ubuntu just type in the terminal ```sudo apt install bc```. if you use arch linux just type ```sudo pacman -S bc```, if you use other distros just search on how to install bc on your linux distro. next step is easy
+### requirements
+first things first you need to install bc. most linux systems have this but if not you need to install it, if you use debian/ubuntu just tpye ```sudo apt install bc``` in the console. if you use fedora type ```sudo dnf install bc``` in the console. and same thing with other linux distros just go to the console and type a command to install bc if you dont have it.
+
+1. **clone the repository**
+```bash
+git clone https://github.com/someguythat-thinkswithportals/calculator-cli.git
+
+cd calculator-cli
+```
+2. **make the script executable**
+```bash
+cd bin
+chmod +x calc.sh
+```
+
+3. **run it**
+```bash
+./calc.sh
+```
+# project structure
+* `calc.sh`: the calculator itself
+* `calc_history.txt`: stores your past calculations, plus its auto generated
+* `.gitignore`: prevents history logs from being pushed from git
+
+and thats it.
