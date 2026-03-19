@@ -35,7 +35,7 @@ chmod +x calc.sh
 ```bash
 ./calc.sh
 ```
-# project structure
+## project structure
 * `calc.sh`: the calculator itself
 * `calc_history.txt`: stores your past calculations, plus its auto generated
 * `.gitignore`: prevents history logs from being pushed from git
